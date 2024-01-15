@@ -1,0 +1,124 @@
+:root{
+  --neon-text-color:rgb(195,0,255);
+}
+
+
+header {
+  top: 0;
+  padding: 1vw 15vw;
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 7vw;
+  position: absolute;
+  /* Aquí esta el elemento con Absolut, sirve para poder ponerlo por encima de todos los elementos */
+  z-index: 99999;
+  /* Es una coña usar este valor pero así te queda claro que va por encima de todo, si vieses en capas 3D la web, estaría 99999 posiciones por encima */
+}
+
+header h1 {
+  padding: 50px 0px;
+  font-size: 4vw;
+  line-height: 90%;
+  background: rgb(157, 116, 134);
+  background: radial-gradient(
+    circle,
+    rgba(157, 116, 134, 1) 0%,
+    rgba(100, 126, 157, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  animation: flicker 1.5s infinite alternate;
+}
+
+header h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+header h1:focus {
+  outline: none;
+}
+@keyframes flicker {
+  10%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  90%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fac991, 0.2rem 0.2rem 1rem #f49cfc,
+      0 0 0.1rem var(--neon-text-color), 0 0 0.1rem var(--neon-text-color),
+      0 0 0.1rem var(--neon-text-color), 0 0 0.1rem var(--neon-text-color),
+      0 0 0.1rem var(--neon-text-color);
+  }
+
+  0%,
+  5%,
+  24%,
+  70%,
+  95% {
+    text-shadow: none;
+  }
+}
+h2{
+  padding: 50px 0px;
+  font-size: 4vw;
+  line-height: 90%;
+  background: rgb(157,116,134);
+  background: radial-gradient(circle, rgba(157,116,134,1) 0%, rgba(100,126,157,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: black;
+
+}
+
+header nav {
+  font-size: 1.7vw;
+  width: 70vw;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  /*Puedes meter aquí el color para el enlace*/
+  color: black;
+  font-size: 1.5vw;
+}
+h3 p {
+
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  min-height: 100vh;
+}
+ 

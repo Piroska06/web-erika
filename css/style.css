@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+  /* Sirve para reiniciar las propiedas que cada navegador pone por defecto */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Todo los valores VH (V-Viewport[TamañoVentana], H-Height[Altura]), dice que ocupara la altura en % del tamaño de tu ventana actual del navegador */
+/* La distribución, es una estructura básica de maquetación, cambiala a tu gusto */
+
+body {
+  font-family: 'Borel';
+  background: rgb(131, 58, 180);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* A partir de aquí puedes meter el background image que quieras */
+  position: relative;
+  /* Sirve para anclar un elemento que a continuación irá en Absolut */
+}
+
+
+section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  min-height: 50vh;
+}
+
+section article {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+}
+/*
+.nosotros p{
+  z-index: 1;
+  width: 540px;
+  height: 440px;
+  padding:  20px 20px;
+  font-size: 18px;
+  line-height: 1,5;
+  rgba(0,0,0,0.45);
+  border-radius: 5px;
+
+}
+.nosotros img{
+  width: 480px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 15px;
+}*/
+div.nosotros{
+  width: 80%;
+  margin: 20px auto;
+ 
+  color:black;
+  padding: 15px;
+}
+
+div.nosotros img{
+  float: left;
+  margin-right: 15px;
+  width: 460px;
+}
+div.nosotros h2{
+  width: 10%;
+  margin:  auto;
+ 
+}
+.piePagina{
+position: fixed;
+bottom: 0;
+display: flex;
+width: 100%;
+flex-wrap: nowrap;
+background-color: rgb(250, 92, 205);
+align-items: center;
+justify-content: center;
+color:black;
+padding: 10px;
+backdrop-filter: blur(20px);
+
+}
+table{
+ position:relative;
+  display:flex;
+}
+table tr {
+  width: 100%;
+  height: 25%;
+}
+table tr td{
+  width: 25%;
+}
+table tr td img {
+  object-fit: cover;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+
+}
+.horarios {
+
+
+  text-align:left;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+}
+.horarios p{
+ font-weight: bold;
+}
+div.container1{
+  border: 0 none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+  align-items:;
+}
+
+/*
+.contenedor-imagenes{
+  float:left;
+  max-width: 55%;
+  height: auto;
+  margin: 20px;
+  padding: 5px;
+  display: flex;
+  margin: auto;
+}
+
+#contenedor_principal{
+  width: 100px;px;
+  height:auto;
+  position:relative;
+  margin:auto;
+  }
+  .contenedor_imagen_texto{
+  width:235px;
+  height:auto;
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  overflow:hidden;
+  }
+  .imagen .texto{
+  width:33%;
+  height:33%;
+  position:relative;
+  display:flex;
+  }
+  .texto{
+  height:auto;
+  text-align:center
+  }
+  .imagen1.imagen2.imagen3{
+    width:33%;
+    height:33%;
+    float:left;
+    margin:10px 10px 0 0
+  }
+ 
