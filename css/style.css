@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
 
 * {
   /* Sirve para reiniciar las propiedas que cada navegador pone por defecto */
@@ -11,93 +11,41 @@
 /* La distribución, es una estructura básica de maquetación, cambiala a tu gusto */
 
 body {
-  font-family: 'Borel';
+  font-family: "Borel";
   background: rgb(131, 58, 180);
   background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* A partir de aquí puedes meter el background image que quieras */
   position: relative;
-  /* Sirve para anclar un elemento que a continuación irá en Absolut */
 }
 
-
 section {
-
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60vw;
+  width: 80vw;
   min-height: 50vh;
 }
 
 section article {
-
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 50vh;
-}
-
-/*
-.nosotros p{
-  z-index: 1;
-  width: 540px;
-  height: 440px;
-  padding:  20px 20px;
-  font-size: 18px;
-  line-height: 1,5;
-  rgba(0,0,0,0.45);
-  border-radius: 5px;
-
-}
-.nosotros img{
-  width: 480px;
-  border-radius: 5px;
-  float: left;
-  margin-right: 15px;
-}*/
-div.nosotros {
-  width: 80%;
-  margin: 20px auto;
-
-  color: black;
-  padding: 15px;
-}
-
-div.nosotros img {
-  float: left;
-  margin-right: 15px;
-  width: 460px;
-}
-
-div.nosotros h2 {
-  width: 10%;
-  margin: auto;
-
-}
-
-.piePagina {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  background-color: rgb(250, 92, 205);
-  align-items: center;
-  justify-content: center;
-  color: black;
-  padding: 10px;
-  backdrop-filter: blur(20px);
-
 }
 
 table {
@@ -117,20 +65,14 @@ table tr td {
 table tr td img {
   object-fit: cover;
   width: 80%;
-  aspect-ratio: 1 / 1;
-
+  aspect-ratio: 4 / 3;
 }
 
 .horarios {
-
-
-  text-align: left;
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: middle;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
   font-size: xx-large;
 }
 
@@ -138,19 +80,22 @@ table tr td img {
   font-weight: bold;
 }
 
-.formulario{
+.nosotros{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: left;
-  gap: 30px;
-  width: 100%;
- 
+  align-items: start;
+  justify-content: baseline;
+  gap: 10px;
 }
-.contacto{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 10px;
+
+.imgAbout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgAbout{
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
 }
