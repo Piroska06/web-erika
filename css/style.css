@@ -66,6 +66,7 @@ table tr td img {
   object-fit: cover;
   width: 80%;
   aspect-ratio: 4 / 3;
+  border-radius: 15px;
 }
 
 .horarios {
@@ -98,4 +99,48 @@ table tr td img {
   width: 60%;
   height: 60%;
   object-fit: cover;
+}
+
+.ubicacion_contacto{
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: center;
+  height: 100vh;
+}
+
+iframe{
+  border-radius: 15px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="text"]{
+  width: 350px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(38, 0, 85, 0.251);
+}
+input::placeholder{
+  padding: 10px;
+}
+label{
+  padding-top: 10px;
+}
+
+#asunto{
+  height: 100px;
+}
+
+button[type="submit"]{
+  width: 70px;
+  height: 30px;
 }
